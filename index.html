@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Word Counter and Replacer</title>
+   </head>
+
+   <body>
+      <div class="container">
+         <textarea
+            name="txt"
+            id="mainText"
+            placeholder="Enter text here..."
+         ></textarea>
+
+         <div class="mainBtn">
+            <button onclick="countWord1()" id="countWord">Count Word</button>
+            <button onclick="findWord1()" id="findWord">Replace Word</button>
+         </div>
+
+         <div class="before" id="main1">
+            <input
+               type="text"
+               id="countWordText"
+               placeholder="Enter word to count"
+            />
+            <button onclick="countWord2()" id="countWordBtn">Count Word</button>
+         </div>
+
+         <div class="before" id="main2">
+            <input type="text" id="findWordText" placeholder="Find word" />
+            <input
+               type="text"
+               id="replaceWordText"
+               placeholder="Replace with"
+            />
+            <button onclick="findWord2()" id="replaceWordBtn">
+               Replace Word
+            </button>
+         </div>
+
+         <div class="result">
+            <h3 id="textCount">Text Count: 0</h3>
+            <h3 id="replaceText">Replaced Text:</h3>
+         </div>
+      </div>
+
+      <script src="app.js"></script>
+   </body>
+</html>
